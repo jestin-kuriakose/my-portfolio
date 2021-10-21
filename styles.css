@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+    width: 100%;
+  }
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: #047aed;
+    color: #fff;
+    height: 70px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+/* Showcase */
+
+.showcase {
+    height: 550px;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #047aed;
+    
+}
+
+.showcase .container{
+    display: grid;
+    overflow: visible;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+    height: 100%;
+    /* align-items: center; */
+    /* position: absolute;
+    top: 12%;
+    left: 25%; */
+    
+}
+
+.showcase-text {
+    position: relative;
+    padding-left: 20px;
+    top: 200px;
+}
+
+.showcase-text a {
+    background-color: #1773EA;
+    color: #fff;
+    padding: 10px;
+    font-size: 2rem;
+    border-radius: 10px;
+    
+}
+
+.showcase-image {
+    position: relative;
+    top: 60px;
+    height: 500px;
+    width: 350px;
+    padding: 40px;
+    
+}
+
+.showcase-image img {
+    border-radius: 150px;
+    height: 100%;
+}
+
+.about {
+    height: 50vh;
+    background-color: #047aed;
+    color: #fff;
+}
+
+.about .container {
+    padding-top: 10px;
+    text-align: center;
+    height: 100%;
+}
+
+.about .container a {
+    font-size: 30px;
+    background-color: #fff;
+    color: #047aed;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+footer {
+    padding: 4rem;
+    background-color: #002240;
+    color: #fff;
+}
+
+footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer .social a {
+    margin: 0 10px;
+  }
+  
+  .fa-github:hover {
+    color: #000000;
+  }
+  
+  .fa-facebook:hover {
+    color: #1773EA;
+  }
+  
+  .fa-linkedin:hover {
+    color: #1C9CEA;
+  }
+
+  .skills h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1.5rem 0;
+  }
+  .skills .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      flex-wrap: wrap;
+  }
+.card {
+      background-color: #fff;
+      color: #333;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin: 18px 10px 40px;
+      text-align: center;
+      transition: transform 0.2s ease-in;
+      width: 120px;
+      height: 190px;
+  }
+
+  .card:hover {
+      transform: translateY(-15px);
+  }
+  .card h4 {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+
+  .projects {
+      background-color: #1773EA;
+      color: #fff;
+  }
+
+  .projects h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1.5rem 0;
+      padding: 1rem 0;
+  }
+  .projects .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      
+  }
+
+  .experience h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1.5rem 0;
+      padding: 1rem 0;
+  }
+
+  .experience .container {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 10px;
+      align-items: center;
+  }
+
+  .experience ul {
+      list-style: outside;
+  }
+
+  .education {
+      background-color: #1773EA;
+      color: #fff;
+  }
+  .education h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 1.5rem 0;
+      padding: 1rem 0;
+  }
+
+  .education .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100%;
+  }
+
+  .certificate {
+      margin: 20px auto;
+      padding: 20px;
+      border: 5px solid;
+      border-radius: 50px;
+  }
+
+  .degree {
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid;
+    border-radius: 50px;
+  }
+
+
+  @media (max-width: 768px) {
+    .navbar {
+        height: 120px;
+        overflow: visible;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+        overflow: visible;
+        
+    }
+    .navbar ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .showcase .container {
+          
+        position: relative;
+        top: 0px;
+        
+        height: auto;
+    }
+  }
+
+  @media (max-width: 500px) {
+      .navbar {
+          height: 140px;
+          overflow: visible;
+          
+      }
+
+      .navbar .container {
+          flex-direction: column;
+          overflow: visible;
+          
+          
+          
+      }
+      .navbar ul {
+          display: flex;
+          /* flex-wrap: wrap; */
+          padding: 10px;
+          background-color: rgba(0, 0, 0, 0.1);
+          margin-bottom: 5px;
+          
+      }
+
+      .showcase {
+          height: 1000px;
+      }
+
+      .showcase .container {
+          
+          position: relative;
+          top: 0px;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+          gap: 0px;
+          height: auto;
+      }
+
+      .showcase-text {
+          top: 60px;
+          height: 400px;
+      }
+
+      /* .showcase-image {
+          margin-top: 25px;
+      } */
+
+      .projects .container {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+      }
+
+      .education .container {
+          display: grid;
+          grid-template-rows: 1fr;
+      }
+      
+      /* .certificate {
+        border-width: 1px;
+        margin-right: 2px;
+      }
+       .degree {
+          border-width: 1px;
+          margin-left: 1px;
+      } */
+
+      footer {
+        padding: 1rem;
+      }
+
+      .fab {
+          padding: 10px 0px;
+      }
+  }
