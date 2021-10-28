@@ -12,16 +12,16 @@
     <!-- Navbar -->
     <div class="navbar">
         <div class="container">
-            <h1 class="logo">Jestin Kuriakose</h1>
+            <a href=""><h1 class="logo">Jestin Kuriakose</h1></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">About me</a></li>
-                    <li><a href="index.html">Skills</a></li>
-                    <li><a href="index.html">Projects</a></li>                   
-                    <li><a href="index.html">Work Experience</a></li>
-                    <li><a href="index.html">Education</a></li>
-                    <li><a href="">Resume</a></li>
+                    <li><a href="#showcase">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>                   
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="https://1drv.ms/b/s!As7WUMgE8nOggppJa1YjlobqcI972Q" target="_blank">Resume</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,14 +29,14 @@
 
     <!-- Showcase -->
 
-    <section class="showcase">
+    <section class="showcase" id="showcase">
         <div class="container">
             <div class="showcase-text">
                 <h1>Hi, I'm Jestin</h1>
                 <h3>I design and build Web Applications</h3>
                 <p>I'm a multi-talented human with knowledge and experience in front-end and back-end web development. I currently work remotely as a freelance web developer and are open for new oppurtunities.</p>
                 <p>You can read more about my skills, experience, education and much more below or in my PDF resume below</p>
-                <a href="">Resume</a>
+                <a href="https://1drv.ms/b/s!As7WUMgE8nOggppJa1YjlobqcI972Q" target="_blank">Resume</a>
             </div>
             <div class="showcase-image">
                 <img src="my-image.jpg" alt="">
@@ -48,7 +48,7 @@
 
     <!-- Skills -->
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <h2>Skills</h2>
         <div class="container">
             <div class="card">
@@ -85,34 +85,61 @@
 
     <!-- Projects -->
 
-    <section class="projects">
-        <h2>Projects</h2>
-        <div class="container">           
+    <section class="projects" id="projects">
+        <h2>Client Projects and Personal Projects</h2>
+        <div class="container">     
+            <div>
+                <h1>kwelectronics.ca </h1>
+                <h1>(Work in Progress)</h1>
+                <p>A eCommerce website using React and Firebase as the backend database.</p>
+                <p>Used: HTML, CSS, React, JWT.</p>
+                <a href="https://react-http-3e279.firebaseapp.com/" target="_blank">Website</a>
+                <a href="https://github.com/jestin-kuriakose/kw-electronics-website" target="_blank">Github</a>
+            </div>     
+            <div>
+                <h1>Princetongtc.com </h1>
+                <h1>(Work in Progress)</h1>
+                <p>A static website for a general trading company.</p>
+                <p>Used: HTML, CSS, JavaScript.</p>
+                <a href="https://princetongtc.com/" target="_blank">Website</a>
+                <a href="https://github.com/jestin-kuriakose/Princeton-website" target="_blank">Github</a>
+            </div>     
             <div>
                 <h1>Weather Web Application</h1>
                 <p>A weather application using Node.js where you can enter an address/city and get the live weather report. This application fetches data by interacting with the MapBox and Weatherstack APIs.</p>
                 <p>Used: JavaScript, Express, Heroku, MongoDB, Heroku, Handlebars, CSS</p>
+                <a href="https://jestin-weather-application.herokuapp.com/" target="_blank">Website</a>
+                <a href="https://github.com/jestin-kuriakose/node-weather-website" target="_blank">Github</a>
             </div>
             <div>
                 <h1>Hangman word game</h1>
                 <p>A Hangman word game that test your vocabulary by guessing letters one at a time to solve the word puzzle. This game uses Fetch API to make asynchronous HTTP GET requests to get random words from an API.</p>
                 <p>Used: JavaScript, HTML, CSS</p>
+                <a href="https://github.com/jestin-kuriakose/hangman-app" target="_blank">Github</a>
             </div>
             <div>
                 <h1>Postman clone</h1>
-                <p>Postman is an application used for API testing. Postman can create a request and gives the response to make sure that it contains the element that we want in the API.
-                    This application is a clone to the postman app where you can insert the URL, query parameters, headers, body, and method (GET, POST, PATCH and DELETE) to make API requests and displays the response in JSON.</p>
+                <p>This application is a clone to the postman app where you can insert the URL, query parameters, headers, body, and method (GET, POST, PATCH and DELETE) to make API requests and displays the response in JSON.</p>
                 <p>Used: JavaScript, HTML, CSS, Handlebars</p>
+                <a href="https://github.com/jestin-kuriakose/postman-clone" target="_blank">Github</a>
             </div>
-            
         </div>
     </section>
 
     <!-- Work Experience -->
 
-    <section class="experience">
+    <section class="experience" id="experience">
         <h1>Work Experience</h2>
         <div class="container">
+            <div>
+                <h2>Web Developer (Kitchener, ON)</h2>
+                <h3>Freelance</h3>
+                <p>03/2020 – Present</p>
+                <ul>
+                    <li>Designing an eCommerce website for a local business using React according to client’s specification. </li>
+                    <li>Build custom websites using WordPress, including custom plugins and filters.</li>
+                </ul>
+            </div>
             <div>
                 <h2>Store Manager / Senior Tech</h2>
                 <h3>Mobile Klinik</h3>
@@ -134,7 +161,7 @@
             </div>
             <div>
                 <h2>Test Engineer Intern</h2>
-                <h3>Neo Green Labsk</h3>
+                <h3>Neo Green Labs</h3>
                 <p>03/2013 - 07/2013</p>
                 <ul>
                     <li>Tested electronic circuit boards for any hardware faults such as Board shorts or faulty capacitors.</li>
@@ -147,7 +174,7 @@
 
     <!-- Education -->
 
-    <section class="education">
+    <section class="education" id="education">
         <h1>Education</h1>
         <div class="container">
             <div class="certificate">
@@ -160,6 +187,7 @@
                     <li><h3>EE Coursework:</h3>Embedded Systems, Logic Design, VLSI Design, Raspberry Pi</li>
                 </ul>
             </div>
+            <div class="vertical-row"></div>
             <div class="degree">
                 <h2>Electrical & Computer Science</h2>
                 <p>Undergraduate degree (GPA: 3.46)</p>
@@ -178,24 +206,24 @@
     <footer>
         <div class="container">
             <div>
-                <h1>Jestin Kuriakose</h1>
+                <a href=""><h1 class="logo">Jestin Kuriakose</h1></a>
                 <p>Copyright &copy; 2021</p>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html">About me</a></li>
-                    <li><a href="index.html">Projects</a></li>
-                    <li><a href="index.html">Skills</a></li>
-                    <li><a href="index.html">Work Experience</a></li>
-                    <li><a href="index.html">Education</a></li>
-                    <li><a href="index.html">Contact me</a></li>
+                    <li><a href="#showcase">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>                   
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="https://1drv.ms/b/s!As7WUMgE8nOggppJa1YjlobqcI972Q" target="_blank">Resume</a></li>
                 </ul>
             </nav>
             <div class="social">
-                <a href="#"><i class="fab fa-github fa-2x"></i></a>
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/jestin-kuriakose" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.facebook.com/jestin.kuriakose.7/"><i class="fab fa-facebook fa-2x" target="_blank"></i></a>
+                <a href="https://www.linkedin.com/in/jestin-kuriakose-47413483/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
     </div>
     </footer>

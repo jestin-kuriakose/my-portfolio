@@ -33,6 +33,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #333;
     line-height: 1.6;
+    padding-top: 70px;
 }
 
 /* Navbar */
@@ -40,11 +41,17 @@ body {
 .navbar {
     background-color: #047aed;
     color: #fff;
-    height: 70px;
+    min-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
 }
 
 .navbar ul {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -63,6 +70,11 @@ body {
 }
 
 .navbar .container {
+    /* max-width: 1100px;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0 40px; */
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +85,7 @@ body {
 /* Showcase */
 
 .showcase {
-    height: 550px;
+    min-height: 300px;
     position: relative;
 }
 
@@ -90,7 +102,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     justify-content: center;
-    height: 100%;
+    min-height: 300px;
     /* align-items: center; */
     /* position: absolute;
     top: 12%;
@@ -101,7 +113,7 @@ body {
 .showcase-text {
     position: relative;
     padding-left: 20px;
-    top: 200px;
+    margin-top: 100px;
 }
 
 .showcase-text a {
@@ -114,9 +126,7 @@ body {
 }
 
 .showcase-image {
-    position: relative;
-    top: 60px;
-    height: 500px;
+    min-height: 300px;
     width: 350px;
     padding: 40px;
     
@@ -218,19 +228,38 @@ footer .social a {
   .projects {
       background-color: #1773EA;
       color: #fff;
+      min-height: 700px;
+      margin: 20px auto;
   }
 
   .projects h2 {
       text-align: center;
       font-size: 2rem;
-      margin: 1.5rem 0;
-      padding: 1rem 0;
+      padding: 1.5rem 0;
+      
   }
   .projects .container {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 10px;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 30px;
+      height: auto;
+      overflow: visible;
+      justify-content: center;
+      padding-bottom: 30px;
+  }
+
+  .projects .container div {
+      margin: 10px;
       
+  }
+
+  .projects .container a {
+    background-color: white;
+    color: #1773EA;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
   }
 
   .experience h1 {
@@ -272,54 +301,101 @@ footer .social a {
   .certificate {
       margin: 20px auto;
       padding: 20px;
-      border: 5px solid;
-      border-radius: 50px;
+      /* border: 5px solid;
+      border-radius: 50px; */
   }
+
+  .vertical-row {
+    Float:left;
+    height: 300px;
+    width:1px; /* edit this if you want */
+    background-color: white;
+   }
 
   .degree {
     margin: 20px auto;
     padding: 20px;
-    border: 5px solid;
-    border-radius: 50px;
+    /* border: 5px solid;
+    border-radius: 50px; */
   }
 
 
   @media (max-width: 768px) {
     .navbar {
-        height: 120px;
+        min-height: 120px;
         overflow: visible;
     }
 
     .navbar .container {
-        flex-direction: column;
-        overflow: visible;
+        /* flex-direction: column;
+        overflow: visible; */
+        display: grid;
+        place-items: center;
         
     }
     .navbar ul {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+          background-color: rgba(0, 0, 0, 0.1);
+          margin-bottom: 5px;
+    }
+
+    .showcase {
+        min-height: 600px;
+        padding-top: 70px;
     }
 
     .showcase .container {
-          
+        
         position: relative;
         top: 0px;
-        
-        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px;
+        height: 100%;
     }
+
+    .showcase-text {
+        margin-top: 20px;
+        min-height: 300px;
+    }
+
+    .projects .container {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+      }
+
+      .education .container {
+        display: grid;
+        grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+    }
+
+      .vertical-row {
+        Float:left;
+        height:1px;
+        width: 100%; /* edit this if you want */
+        background-color: white;
+       }
   }
 
   @media (max-width: 500px) {
       .navbar {
-          height: 140px;
-          overflow: visible;
+          min-height: 140px;
+          /* overflow: visible; */
           
       }
 
       .navbar .container {
-          flex-direction: column;
-          overflow: visible;
-          
+          /* flex-direction: column;
+          height: 100%;
+          overflow: visible; */
+          display: grid;
+        place-items: center;
+        overflow: auto;
           
           
       }
@@ -333,7 +409,8 @@ footer .social a {
       }
 
       .showcase {
-          height: 1000px;
+          min-height: 600px;
+          padding-top: 50px;
       }
 
       .showcase .container {
@@ -347,8 +424,8 @@ footer .social a {
       }
 
       .showcase-text {
-          top: 60px;
-          height: 400px;
+          margin-top: 60px;
+          min-height: 400px;
       }
 
       /* .showcase-image {
@@ -363,7 +440,15 @@ footer .social a {
       .education .container {
           display: grid;
           grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
       }
+
+      .vertical-row {
+        Float:left;
+        height:1px;
+        width: 100%; /* edit this if you want */
+        background-color: white;
+       }
       
       /* .certificate {
         border-width: 1px;
